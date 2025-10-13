@@ -24,7 +24,7 @@ export default function login() {
       const data = await response.json();
       if (response.ok){
         localStorage.setItem('token',data.token);
-        localStorage.setItem('token',data.role);
+        localStorage.setItem('role',data.role);
         if (data.role === 'admin'){
           navigate('/admin');
         }else{

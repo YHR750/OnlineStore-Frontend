@@ -9,7 +9,7 @@ export default function details() {
     const navigate = useNavigate();
     const {id} = useParams();
     const [product, setProducts] =useState([]);
-    const [loading, setLoading] =useState(True);
+    const [loading, setLoading] =useState(true);
     const [error, setError] =useState(null);
     useEffect(() =>{
       const fetchProduct=async() =>{
