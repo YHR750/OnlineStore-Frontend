@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 'border-box';
+    font-family: Arial, Helvetica, sans-serif;
+}
+.App{
+    background-color: #fff;
+    min-height: 100vh;
+    width: 85vw;
+    max-width: 1900px;
+    margin: 1rem auto;
+}
+body{
+    max-width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+}
+.menu-button{
+    background-color: #000000;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.navigation-home{
+    font-size: large;
+    padding-left: 20px;
+}
+.navigation-menu{
+    font-size: large;
+    margin-right: 0.5rem;
+    display: flex;
+}
+.navigation-menu a{
+    margin-right: 2rem;
+    text-decoration: none;
+    color: black;
+}
+.navigation-home a{
+    text-decoration: none;
+    color: black;
+}
+.heroImage img{
+    width: 100%;
+    height: auto;
+}
+.heroText{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.browse-here {
+    padding-top: 20px;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(250px, auto);
+    margin-top: 10px;
+}
+
+.product-item{
+    position: relative;
+}
+
+.product-item img{
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+}
+
+.product-item h4{
+    font-weight: 500;
+    margin-top: 5px;
+}
+.product-item h5{
+    margin-top: 3px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    color: #828282;
+}
+.product-item .sellingPrice h5{
+    color: #000000;
+    font-weight: 700;
+    font-size: large;
+}
+.more{
+    margin-top: 80px;
+}
+
+.more .product-container .product-item img{
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    margin-top: 120px;
+}
+.footer-container-list h3{
+    color: #000000;
+    margin-top: 0px;
+    font-size: medium;
+}
+.contact-container{
+    display: flex;
+    margin-bottom: 40px;
+}
+.contact-container .contact-left{
+    color: #454545;
+}
+.contact-container .contact-right{
+    color: #454545;
+    margin-left: 200px;
+}
+.contact-container .contact-left h3{
+    font-weight: 250;
+    margin-top: 20px;
+}
+.contact-container .contact-right h3{
+    font-weight: 250;
+    margin-top: 20px;
+}
+.icon-position{
+    margin-top: 128px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+.icon-position span{
+    margin-left: 20px;
+}
+.adminpage{
+    background-color: #fff;
+    min-height: 100vh;
+    width: 85vw;
+    max-width: 1900px;
+    margin: 1rem auto;
+}
+.userpage{
+    background-color: #fff;
+    min-height: 100vh;
+    width: 85vw;
+    max-width: 1900px;
+    margin: 1rem auto;
+}
