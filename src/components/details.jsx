@@ -1,5 +1,5 @@
 import React from 'react'
-import Menu from './menu'
+import Menu from './menuuser'
 import Footer from './footer'
 import { useEffect,useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
@@ -14,13 +14,14 @@ export default function details() {
     useEffect(() =>{
       const fetchProduct=async() =>{
         try{
-          const response = await fetch (`https://127.0.0.1:3000/getShopDetails/${id}`);
+          const response = await fetch (`http://127.0.0.1:3000/getShopDetails/${id}`);
           const data = await response.json();
           console.log(data);
           setProducts(data.values);
         }
         catch(err){
           setError(err.message);
+          console.log(err);
         }
       };
       fetchProduct();
@@ -33,7 +34,7 @@ export default function details() {
         {product.map((item) => (
           <div key={item.id_product} className='detail-item'>
             <div className='detail-image'>
-              <img src={item.img} alt=''/>
+              <img src={item.image} alt=''/>
             </div>
             <div className='detail-text'>
               <h4>

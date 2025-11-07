@@ -11,6 +11,7 @@ import UserPage from './components/userpage.jsx'
 import Details from './components/details.jsx'
 import Error from './components/error.jsx'
 import ProductRole from './components/productRole.jsx'
+import StockDetails from './components/stockDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,11 @@ const router = createBrowserRouter([
   {
     path: '/productrole/:id',
     element: <ProductRole/>,
+    errorElement: <Error/>,
+  },
+  {
+    path: '/stockdetails',
+    element: <StockDetails/>,
     errorElement: <Error/>,
   }
   
