@@ -47,7 +47,7 @@ export default function details() {
                 {item.selling_price}
               </h4>
               <form>
-                <button type='submit'>Add to Cart</button>
+                <button type='submit' className='modal-button'>Add to Cart</button>
               </form>
             </div>
           </div>

@@ -106,7 +106,7 @@ export default function stockDetails() {
                   <div className='modal'>
                     <div className='popup-header'> Edit Stock </div>
                     <form
-                      onSubmit={(e) => handlePrice(e,close)}
+                      onSubmit={(e) => handleStock(e,close)}
                     >
                       <div className='popup-alignment'>
                         <h4>Product Name:</h4>
@@ -140,7 +140,7 @@ export default function stockDetails() {
                       <h4>Selling Price : </h4>
                       <input type="text" value={item.selling_price} onChange={(e) => updateProduct(index, 'selling_price',e.target.value)}/>
                     </div>
-                    <button className='button-save' type='submit' >Save</button>
+                    <button className='modal-button' type='submit' >Save</button>
                   </form>
                 </div>
               )}

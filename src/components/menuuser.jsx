@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { Link, useNavigate } from "react-router-dom";
 import '../index.css';
+import CartIcon from './cartIcon';
 
 export default function menuuser() {
     const navigate = useNavigate();
@@ -25,7 +26,8 @@ export default function menuuser() {
             <Link to='/'>Contact Us</Link>
             <a href="">Settings</a>
             <a href="">Page</a>
-            <Box sx={{'& button':{mr:1,mt:-1}}}>
+            <CartIcon/>
+            <Box sx={{'& button':{mr:1,mt:0,ml:3}}}>
                 <Button onClick={handleLogout} variant="contained" size="small">
                     Log Out
 

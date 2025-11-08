@@ -38,6 +38,7 @@ nav{
     margin-right: 2rem;
     text-decoration: none;
     color: black;
+    margin-top: 5px;
 }
 .navigation-home a{
     text-decoration: none;
@@ -223,6 +224,16 @@ form .popup-alignment h4{
     padding-right: 10px;
 }
 .modal-button{
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    background-color: #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.addToCart-Button{
     width: 100px;
     height: 30px;
     font-weight: bold;
